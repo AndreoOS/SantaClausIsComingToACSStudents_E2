@@ -55,19 +55,17 @@ Starting audit...
 [ERROR] C:\Users\andre\Desktop\Cursuri\Anul II Sem 1\POO\POO_Proiect_Etapa2\.\src\data\InitialData.java:74:5: Missing a Javadoc comment. [MissingJavadocMethod]
 [ERROR] C:\Users\andre\Desktop\Cursuri\Anul II Sem 1\POO\POO_Proiect_Etapa2\.\src\data\InitialData.java:74:42: Parameter city should be final. [FinalParameters]
 [ERROR] C:\Users\andre\Desktop\Cursuri\Anul II Sem 1\POO\POO_Proiect_Etapa2\.\src\data\InitialData.java:86:5: Missing a Javadoc comment. [MissingJavadocMethod]
-[ERROR] C:\Users\andre\Desktop\Cursuri\Anul II Sem 1\POO\POO_Proiect_Etapa2\.\src\dataprocessing\DataManagement.java:56:49: '23' is a magic number. [MagicNumber]
-[ERROR] C:\Users\andre\Desktop\Cursuri\Anul II Sem 1\POO\POO_Proiect_Etapa2\.\src\dataprocessing\DataManagement.java:61:35: '23' is a magic number. [MagicNumber]
+[ERROR] C:\Users\andre\Desktop\Cursuri\Anul II Sem 1\POO\POO_Proiect_Etapa2\.\src\dataprocessing\DataManagement.java:56:49: '28' is a magic number. [MagicNumber]
+[ERROR] C:\Users\andre\Desktop\Cursuri\Anul II Sem 1\POO\POO_Proiect_Etapa2\.\src\dataprocessing\DataManagement.java:61:35: '28' is a magic number. [MagicNumber]
 [ERROR] C:\Users\andre\Desktop\Cursuri\Anul II Sem 1\POO\POO_Proiect_Etapa2\.\src\dataprocessing\strategies\GiftGivingStrategy.java:3:8: Unused import - data.Database. [UnusedImports]
 [ERROR] C:\Users\andre\Desktop\Cursuri\Anul II Sem 1\POO\POO_Proiect_Etapa2\.\src\dataprocessing\strategies\GiftGivingStrategy.java:6:5: Missing a Javadoc comment. [MissingJavadocMethod]
 [ERROR] C:\Users\andre\Desktop\Cursuri\Anul II Sem 1\POO\POO_Proiect_Etapa2\.\src\dataprocessing\strategies\IdGiftStrategy.java:9:58: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\Users\andre\Desktop\Cursuri\Anul II Sem 1\POO\POO_Proiect_Etapa2\.\src\dataprocessing\strategies\IdGiftStrategy.java:14:27: Parameter database should be final. [FinalParameters]
 [ERROR] C:\Users\andre\Desktop\Cursuri\Anul II Sem 1\POO\POO_Proiect_Etapa2\.\src\dataprocessing\strategies\IdGiftStrategy.java:19:5: Class 'IdGiftStrategy' looks like designed for extension (can be subclassed), but the method 'distributeGifts' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'IdGiftStrategy' final or making the method 'distributeGifts' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\andre\Desktop\Cursuri\Anul II Sem 1\POO\POO_Proiect_Etapa2\.\src\dataprocessing\strategies\IdGiftStrategy.java:41: Line is longer than 100 characters (found 116). [LineLength]
 [ERROR] C:\Users\andre\Desktop\Cursuri\Anul II Sem 1\POO\POO_Proiect_Etapa2\.\src\dataprocessing\strategies\NiceScoreCityGiftStrategy.java:15:38: Parameter database should be final. [FinalParameters]
 [ERROR] C:\Users\andre\Desktop\Cursuri\Anul II Sem 1\POO\POO_Proiect_Etapa2\.\src\dataprocessing\strategies\NiceScoreCityGiftStrategy.java:20:5: Class 'NiceScoreCityGiftStrategy' looks like designed for extension (can be subclassed), but the method 'distributeGifts' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'NiceScoreCityGiftStrategy' final or making the method 'distributeGifts' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] C:\Users\andre\Desktop\Cursuri\Anul II Sem 1\POO\POO_Proiect_Etapa2\.\src\dataprocessing\strategies\NiceScoreGiftStrategy.java:14:34: Parameter database should be final. [FinalParameters]
 [ERROR] C:\Users\andre\Desktop\Cursuri\Anul II Sem 1\POO\POO_Proiect_Etapa2\.\src\dataprocessing\strategies\NiceScoreGiftStrategy.java:19:5: Class 'NiceScoreGiftStrategy' looks like designed for extension (can be subclassed), but the method 'distributeGifts' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'NiceScoreGiftStrategy' final or making the method 'distributeGifts' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\andre\Desktop\Cursuri\Anul II Sem 1\POO\POO_Proiect_Etapa2\.\src\dataprocessing\strategies\NiceScoreGiftStrategy.java:41: Line is longer than 100 characters (found 116). [LineLength]
 [ERROR] C:\Users\andre\Desktop\Cursuri\Anul II Sem 1\POO\POO_Proiect_Etapa2\.\src\entities\Child.java:67:5: Missing a Javadoc comment. [MissingJavadocMethod]
 [ERROR] C:\Users\andre\Desktop\Cursuri\Anul II Sem 1\POO\POO_Proiect_Etapa2\.\src\entities\Child.java:164:35: Parameter niceScoreBonus should be final. [FinalParameters]
 [ERROR] C:\Users\andre\Desktop\Cursuri\Anul II Sem 1\POO\POO_Proiect_Etapa2\.\src\entities\Child.java:172:24: Parameter elf should be final. [FinalParameters]
@@ -97,4 +95,4 @@ Starting audit...
 [ERROR] C:\Users\andre\Desktop\Cursuri\Anul II Sem 1\POO\POO_Proiect_Etapa2\.\src\factory\GiftGivingStrategyFactory.java:14:5: Missing a Javadoc comment. [MissingJavadocMethod]
 [ERROR] C:\Users\andre\Desktop\Cursuri\Anul II Sem 1\POO\POO_Proiect_Etapa2\.\src\factory\GiftGivingStrategyFactory.java:16:9: 'switch' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 97 errors.
+Checkstyle ends with 95 errors.

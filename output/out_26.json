@@ -85,8 +85,8 @@
       "niceScoreHistory" : [ 7.0, 9.0 ],
       "assignedBudget" : 326.57992565055764,
       "receivedGifts" : [ {
-        "productName" : "Dress",
-        "price" : 45.0,
+        "productName" : "Shoes",
+        "price" : 70.0,
         "category" : "Clothes"
       }, {
         "productName" : "Gummy Bears",
@@ -158,8 +158,8 @@
         "price" : 35.0,
         "category" : "Books"
       }, {
-        "productName" : "Shoes",
-        "price" : 70.0,
+        "productName" : "Dress",
+        "price" : 45.0,
         "category" : "Clothes"
       } ]
     }, {

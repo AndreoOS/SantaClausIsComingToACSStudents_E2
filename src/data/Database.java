@@ -120,7 +120,7 @@ public final class Database {
         List<Map.Entry<Cities, Double>> sorted = new ArrayList<>(averageCityScores.entrySet());
         sorted = sorted.stream().sorted((o1, o2) -> {
             if (o1.getValue().compareTo(o2.getValue()) == 0) {
-                return o1.getKey().compareTo(o2.getKey());
+                return o1.getKey().toString().compareTo(o2.getKey().toString());
             } else {
                 return o2.getValue().compareTo(o1.getValue());
             }
