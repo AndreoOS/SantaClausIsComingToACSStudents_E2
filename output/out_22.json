@@ -112,8 +112,8 @@
         "price" : 10.0,
         "category" : "Sweets"
       }, {
-        "productName" : "Uno",
-        "price" : 10.0,
+        "productName" : "Puzzle",
+        "price" : 50.0,
         "category" : "Board Games"
       }, {
         "productName" : "Headphones",
@@ -135,8 +135,8 @@
       "niceScoreHistory" : [ 7.0, 3.0 ],
       "assignedBudget" : 141.5740740740741,
       "receivedGifts" : [ {
-        "productName" : "Uno",
-        "price" : 10.0,
+        "productName" : "Puzzle",
+        "price" : 50.0,
         "category" : "Board Games"
       } ]
     }, {
@@ -173,8 +173,8 @@
         "price" : 100.0,
         "category" : "Technology"
       }, {
-        "productName" : "Uno",
-        "price" : 10.0,
+        "productName" : "Puzzle",
+        "price" : 50.0,
         "category" : "Board Games"
       }, {
         "productName" : "Gummy Bears",
@@ -193,7 +193,11 @@
       "averageScore" : 5.5,
       "niceScoreHistory" : [ 5.0 ],
       "assignedBudget" : 60.888433981576256,
-      "receivedGifts" : [ ]
+      "receivedGifts" : [ {
+        "productName" : "Puzzle",
+        "price" : 50.0,
+        "category" : "Board Games"
+      } ]
     }, {
       "id" : 1,
       "lastName" : "Stoica",
@@ -204,7 +208,19 @@
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 4.0, 10.0 ],
       "assignedBudget" : 110.70624360286592,
-      "receivedGifts" : [ ]
+      "receivedGifts" : [ {
+        "productName" : "Bag of Candy",
+        "price" : 20.0,
+        "category" : "Sweets"
+      }, {
+        "productName" : "Puzzle",
+        "price" : 50.0,
+        "category" : "Board Games"
+      }, {
+        "productName" : "Castle",
+        "price" : 15.0,
+        "category" : "Toys"
+      } ]
     }, {
       "id" : 2,
       "lastName" : "Ionescu",
@@ -215,7 +231,15 @@
       "averageScore" : 5.5,
       "niceScoreHistory" : [ 7.0, 3.0 ],
       "assignedBudget" : 46.83725690890481,
-      "receivedGifts" : [ ]
+      "receivedGifts" : [ {
+        "productName" : "Bag of Candy",
+        "price" : 20.0,
+        "category" : "Sweets"
+      }, {
+        "productName" : "Car",
+        "price" : 20.0,
+        "category" : "Toys"
+      } ]
     }, {
       "id" : 3,
       "lastName" : "Pop",
@@ -237,7 +261,11 @@
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 8.0, 2.0 ],
       "assignedBudget" : 59.61105424769704,
-      "receivedGifts" : [ ]
+      "receivedGifts" : [ {
+        "productName" : "Puzzle",
+        "price" : 50.0,
+        "category" : "Board Games"
+      } ]
     }, {
       "id" : 5,
       "lastName" : "Popescu",
@@ -259,7 +287,11 @@
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 7.0 ],
       "assignedBudget" : 85.15864892528148,
-      "receivedGifts" : [ ]
+      "receivedGifts" : [ {
+        "productName" : "Twilight",
+        "price" : 30.0,
+        "category" : "Books"
+      } ]
     } ]
   }, {
     "children" : [ {
@@ -272,7 +304,15 @@
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 4.0, 10.0 ],
       "assignedBudget" : 71.38240996416191,
-      "receivedGifts" : [ ]
+      "receivedGifts" : [ {
+        "productName" : "Twilight",
+        "price" : 30.0,
+        "category" : "Books"
+      }, {
+        "productName" : "Car",
+        "price" : 20.0,
+        "category" : "Toys"
+      } ]
     }, {
       "id" : 2,
       "lastName" : "Ionescu",
@@ -283,7 +323,11 @@
       "averageScore" : 3.666666666666667,
       "niceScoreHistory" : [ 7.0, 3.0, 0.0 ],
       "assignedBudget" : 26.173550320192703,
-      "receivedGifts" : [ ]
+      "receivedGifts" : [ {
+        "productName" : "Bike",
+        "price" : 25.0,
+        "category" : "Toys"
+      } ]
     }, {
       "id" : 3,
       "lastName" : "Pop",
@@ -305,7 +349,11 @@
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 8.0, 2.0 ],
       "assignedBudget" : 92.79713295341048,
-      "receivedGifts" : [ ]
+      "receivedGifts" : [ {
+        "productName" : "Puzzle",
+        "price" : 50.0,
+        "category" : "Board Games"
+      } ]
     }, {
       "id" : 5,
       "lastName" : "Popescu",
@@ -327,7 +375,15 @@
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 7.0 ],
       "assignedBudget" : 71.38240996416191,
-      "receivedGifts" : [ ]
+      "receivedGifts" : [ {
+        "productName" : "Car",
+        "price" : 20.0,
+        "category" : "Toys"
+      }, {
+        "productName" : "Twilight",
+        "price" : 30.0,
+        "category" : "Books"
+      } ]
     }, {
       "id" : 7,
       "lastName" : "Popescu",
@@ -338,7 +394,11 @@
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 3.0 ],
       "assignedBudget" : 71.38240996416191,
-      "receivedGifts" : [ ]
+      "receivedGifts" : [ {
+        "productName" : "Car",
+        "price" : 20.0,
+        "category" : "Toys"
+      } ]
     }, {
       "id" : 8,
       "lastName" : "Pop",
@@ -363,13 +423,9 @@
       "niceScoreHistory" : [ 4.0, 10.0 ],
       "assignedBudget" : 33.62493165664298,
       "receivedGifts" : [ {
-        "productName" : "Castle",
-        "price" : 15.0,
+        "productName" : "Bike",
+        "price" : 25.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Uno",
-        "price" : 10.0,
-        "category" : "Board Games"
       } ]
     }, {
       "id" : 2,
@@ -392,11 +448,7 @@
       "averageScore" : 3.5133333333333336,
       "niceScoreHistory" : [ 2.0, 5.0, 1.0, 4.0, 0.0 ],
       "assignedBudget" : 11.8135593220339,
-      "receivedGifts" : [ {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
-      } ]
+      "receivedGifts" : [ ]
     }, {
       "id" : 4,
       "lastName" : "Pop",
@@ -407,11 +459,7 @@
       "averageScore" : 5.0,
       "niceScoreHistory" : [ 8.0, 2.0, 0.0 ],
       "assignedBudget" : 16.81246582832149,
-      "receivedGifts" : [ {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
-      } ]
+      "receivedGifts" : [ ]
     }, {
       "id" : 5,
       "lastName" : "Popescu",
@@ -423,9 +471,9 @@
       "niceScoreHistory" : [ 2.0 ],
       "assignedBudget" : 12.104975396391472,
       "receivedGifts" : [ {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
+        "productName" : "Headphones",
+        "price" : 100.0,
+        "category" : "Technology"
       } ]
     }, {
       "id" : 6,
@@ -438,12 +486,8 @@
       "niceScoreHistory" : [ 7.0 ],
       "assignedBudget" : 33.62493165664298,
       "receivedGifts" : [ {
-        "productName" : "Uno",
-        "price" : 10.0,
-        "category" : "Board Games"
-      }, {
-        "productName" : "Castle",
-        "price" : 15.0,
+        "productName" : "Bike",
+        "price" : 25.0,
         "category" : "Toys"
       } ]
     }, {
@@ -457,12 +501,8 @@
       "niceScoreHistory" : [ 3.0, 6.0 ],
       "assignedBudget" : 29.50587752870421,
       "receivedGifts" : [ {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
-      }, {
-        "productName" : "Castle",
-        "price" : 15.0,
+        "productName" : "Bike",
+        "price" : 25.0,
         "category" : "Toys"
       } ]
     }, {
@@ -475,11 +515,7 @@
       "averageScore" : 4.2,
       "niceScoreHistory" : [ 3.0 ],
       "assignedBudget" : 18.359212684527066,
-      "receivedGifts" : [ {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
-      } ]
+      "receivedGifts" : [ ]
     }, {
       "id" : 9,
       "lastName" : "Mihalache",

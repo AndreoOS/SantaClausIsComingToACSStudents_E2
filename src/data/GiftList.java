@@ -23,6 +23,29 @@ public final class GiftList {
         toys = new ArrayList<>();
     }
 
+    public void addToGiftList(final Gift gift) {
+        switch (gift.getCategory()) {
+            case SWEETS -> {
+                sweets.add(gift);
+            }
+            case BOARD_GAMES -> {
+                boardGames.add(gift);
+            }
+            case TECHNOLOGY -> {
+                tech.add(gift);
+            }
+            case CLOTHES -> {
+                clothes.add(gift);
+            }
+            case TOYS -> {
+                toys.add(gift);
+            }
+            case BOOKS -> {
+                books.add(gift);
+            }
+        }
+    }
+
     /**
      * Method divides the gifts into sub-lists according to their category
      * @param santaGiftList Unsorted list of all gifts
@@ -88,6 +111,15 @@ public final class GiftList {
         } else {
             return Double.compare(o2.getPrice(), o1.getPrice());
         }
+    }
+
+    public void removeNoQuantity() {
+        boardGames.removeIf(gift -> gift.getQuantity() == 0);
+        tech.removeIf(gift -> gift.getQuantity() == 0);
+        clothes.removeIf(gift -> gift.getQuantity() == 0);
+        toys.removeIf(gift -> gift.getQuantity() == 0);
+        books.removeIf(gift -> gift.getQuantity() == 0);
+        sweets.removeIf(gift -> gift.getQuantity() == 0);
     }
 
     public List<Gift> getBoardGames() {

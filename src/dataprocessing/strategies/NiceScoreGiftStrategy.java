@@ -19,7 +19,9 @@ public class NiceScoreGiftStrategy implements GiftGivingStrategy {
     @Override
     public void distributeGifts() {
         Gift assignedGift;
-        for (Child child : database.getInitialData().sortChildrenByNiceScore()) {
+        for (Child child : database.getInitialData().sortChildrenByNiceScoreAverage()) {
+            database.getInitialData().removeNoQuantity();
+            giftList.removeNoQuantity();
             Double budget = child.getAssignedBudget();
             for (Category giftCategory : child.getGiftsPreferences()) {
                 assignedGift = null;
@@ -36,7 +38,8 @@ public class NiceScoreGiftStrategy implements GiftGivingStrategy {
                 }
                 if (assignedGift != null) {
                     if (Double.compare(budget, assignedGift.getPrice()) > 0
-                            && !child.getReceivedGifts().contains(assignedGift)) {
+                            && !child.getReceivedGifts().contains(assignedGift) && assignedGift.getQuantity() > 0) {
+                        assignedGift.setQuantity(assignedGift.getQuantity() - 1);
                         child.getReceivedGifts().add(assignedGift);
                         budget = budget - assignedGift.getPrice();
                     }

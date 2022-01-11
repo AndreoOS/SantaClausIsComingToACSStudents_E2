@@ -112,8 +112,8 @@
       "niceScoreHistory" : [ 4.0, 8.0, 8.0, 1.0 ],
       "assignedBudget" : 375.7608069164265,
       "receivedGifts" : [ {
-        "productName" : "Teddy Bear",
-        "price" : 5.0,
+        "productName" : "Doll",
+        "price" : 10.0,
         "category" : "Toys"
       }, {
         "productName" : "Handbag",
@@ -135,8 +135,8 @@
       "niceScoreHistory" : [ 6.0 ],
       "assignedBudget" : 511.23919308357347,
       "receivedGifts" : [ {
-        "productName" : "Teddy Bear",
-        "price" : 5.0,
+        "productName" : "Doll",
+        "price" : 10.0,
         "category" : "Toys"
       }, {
         "productName" : "Bag of Candy",
@@ -160,12 +160,12 @@
         "price" : 10.0,
         "category" : "Board Games"
       }, {
-        "productName" : "Handbag",
-        "price" : 200.0,
+        "productName" : "Dress",
+        "price" : 45.0,
         "category" : "Clothes"
       }, {
-        "productName" : "Teddy Bear",
-        "price" : 5.0,
+        "productName" : "Doll",
+        "price" : 10.0,
         "category" : "Toys"
       } ]
     }, {
@@ -179,12 +179,12 @@
       "niceScoreHistory" : [ 6.0 ],
       "assignedBudget" : 481.46137787056364,
       "receivedGifts" : [ {
-        "productName" : "Handbag",
-        "price" : 200.0,
+        "productName" : "Dress",
+        "price" : 45.0,
         "category" : "Clothes"
       }, {
-        "productName" : "Teddy Bear",
-        "price" : 5.0,
+        "productName" : "Doll",
+        "price" : 10.0,
         "category" : "Toys"
       }, {
         "productName" : "Bag of Candy",
@@ -206,8 +206,8 @@
         "price" : 10.0,
         "category" : "Board Games"
       }, {
-        "productName" : "Handbag",
-        "price" : 200.0,
+        "productName" : "Dress",
+        "price" : 45.0,
         "category" : "Clothes"
       } ]
     } ]

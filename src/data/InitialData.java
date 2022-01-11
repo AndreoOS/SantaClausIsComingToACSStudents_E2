@@ -2,8 +2,10 @@ package data;
 
 import entities.Child;
 import entities.Gift;
+import enums.Cities;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public final class InitialData {
@@ -42,13 +44,7 @@ public final class InitialData {
      * @return sorted list
      */
     public List<Child> sortChildrenById() {
-        return children.stream().sorted((o1, o2) -> {
-            if (o1.getId().compareTo(o2.getId()) > 0) {
-                return o1.getId().compareTo(o2.getId());
-            } else {
-                return o2.getId().compareTo(o1.getId());
-            }
-        }).toList();
+        return children.stream().sorted(Comparator.comparing(Child::getId)).toList();
     }
 
     /**
@@ -65,20 +61,29 @@ public final class InitialData {
         return null;
     }
 
-    public List<Child> sortChildrenByNiceScore() {
+    public List<Child> sortChildrenByNiceScoreAverage() {
         return children.stream().sorted(((o1, o2) -> {
-            if (o1.getNiceScore().compareTo(o2.getNiceScore()) > 0) {
-                return o1.getNiceScore().compareTo(o2.getNiceScore());
-            } else if (o1.getNiceScore().compareTo(o2.getNiceScore()) < 0) {
-                return o2.getNiceScore().compareTo(o1.getNiceScore());
+            if (o1.getAverageScore().compareTo(o2.getAverageScore()) == 0) {
+                return o1.getId().compareTo(o2.getId());
             } else {
-                if (o1.getId().compareTo(o2.getId()) > 0) {
-                    return o1.getId().compareTo(o2.getId());
-                } else {
-                    return o2.getId().compareTo(o1.getId());
-                }
+                return o2.getAverageScore().compareTo(o1.getAverageScore());
             }
-
         })).toList();
+    }
+
+    public List<Child> getChildrenInCity(Cities city) {
+        List<Child> result = new ArrayList<>();
+        for (Child child : children) {
+            if (child.getCity().equals(city)) {
+                result.add(child);
+            }
+        }
+        result.stream().sorted(Comparator.comparing(Child::getId)).toList();
+
+        return result;
+    }
+
+    public void removeNoQuantity() {
+        santaGiftsList.removeIf(gift -> gift.getQuantity() == 0);
     }
 }

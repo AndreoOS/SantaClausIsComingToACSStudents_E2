@@ -44,20 +44,20 @@ public final class Simulation {
      * @param odb Database that stores the results
      */
     private void initialRound(final OutputDatabase odb) {
+        for(Child child : database.getInitialData().getChildren()) {
+            child.eraseDuplicates();
+        }
         setNiceScoreHistory();
         setAgeCategoriesAndCalculateAverage();
         database.removeYoungAdults();
         setAssignedBudgets();
-        ElfModifier modifier = new ElfModifier(database);
+        ElfModifier modifier = new ElfModifier(database, giftList);
         modifier.applyBlackPinkElfModifier();
         giveGifts("id");
+        modifier.applyYellowElfModifier();
         Children giftedChildren = new Children();
         for (Child child : database.getInitialData().getChildren()) {
             OutputChild outputChild = new OutputChild(child);
-            for (Gift receivedGift : child.getReceivedGifts()) {
-                OutputGift outputGift = new OutputGift(receivedGift);
-                outputChild.getReceivedGifts().add(outputGift);
-            }
             giftedChildren.getChildren().add(outputChild);
         }
         odb.getAnnualChildren().add(giftedChildren);
@@ -81,19 +81,17 @@ public final class Simulation {
             annualChange.addNewChildren(database);
             annualChange.updateChildren(database);
             annualChange.updateBudget(database);
+            annualChange.addNewGifts(database, giftList);
             setAgeCategoriesAndCalculateAverage();
             database.removeYoungAdults();
             setAssignedBudgets();
-            ElfModifier modifier = new ElfModifier(database);
+            ElfModifier modifier = new ElfModifier(database, giftList);
             modifier.applyBlackPinkElfModifier();
             giveGifts(annualChange.getStrategy());
+            modifier.applyYellowElfModifier();
             Children giftedChildren = new Children();
             for (Child child : database.getInitialData().getChildren()) {
                 OutputChild outputChild = new OutputChild(child);
-                for (Gift receivedGift : child.getReceivedGifts()) {
-                    OutputGift outputGift = new OutputGift(receivedGift);
-                    outputChild.getReceivedGifts().add(outputGift);
-                }
                 giftedChildren.getChildren().add(outputChild);
             }
             odb.getAnnualChildren().add(giftedChildren);

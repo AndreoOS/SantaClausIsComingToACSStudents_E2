@@ -4,6 +4,7 @@ import data.Database;
 import data.GiftList;
 import dataprocessing.strategies.GiftGivingStrategy;
 import dataprocessing.strategies.IdGiftStrategy;
+import dataprocessing.strategies.NiceScoreCityGiftStrategy;
 import dataprocessing.strategies.NiceScoreGiftStrategy;
 
 public class GiftGivingStrategyFactory {
@@ -20,7 +21,7 @@ public class GiftGivingStrategyFactory {
                 return new NiceScoreGiftStrategy(database, giftList);
             }
             case ("niceScoreCity") -> {
-                return null;
+                return new NiceScoreCityGiftStrategy(database, giftList);
             }
             default -> {
                 return null;
