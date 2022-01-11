@@ -53,8 +53,8 @@
         "price" : 10.0,
         "category" : "Sweets"
       }, {
-        "productName" : "Castle",
-        "price" : 15.0,
+        "productName" : "Car",
+        "price" : 20.0,
         "category" : "Toys"
       }, {
         "productName" : "Dress",
@@ -71,11 +71,7 @@
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 8.0 ],
       "assignedBudget" : 696.3719512195123,
-      "receivedGifts" : [ {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
-      } ]
+      "receivedGifts" : [ ]
     } ]
   }, {
     "children" : [ {
@@ -225,6 +221,10 @@
       "niceScoreHistory" : [ 7.0, 9.0, 0.0 ],
       "assignedBudget" : 310.534519791347,
       "receivedGifts" : [ {
+        "productName" : "Headphones",
+        "price" : 100.0,
+        "category" : "Technology"
+      }, {
         "productName" : "Dress",
         "price" : 45.0,
         "category" : "Clothes"
@@ -237,8 +237,8 @@
         "price" : 35.0,
         "category" : "Books"
       }, {
-        "productName" : "Castle",
-        "price" : 15.0,
+        "productName" : "Doll",
+        "price" : 10.0,
         "category" : "Toys"
       } ]
     }, {
@@ -252,9 +252,13 @@
       "niceScoreHistory" : [ 4.0, 6.0, 6.0 ],
       "assignedBudget" : 226.43142068119056,
       "receivedGifts" : [ {
-        "productName" : "Castle",
-        "price" : 15.0,
+        "productName" : "Car",
+        "price" : 20.0,
         "category" : "Toys"
+      }, {
+        "productName" : "Headphones",
+        "price" : 100.0,
+        "category" : "Technology"
       }, {
         "productName" : "Gummy Bears",
         "price" : 10.0,
@@ -279,16 +283,20 @@
         "price" : 35.0,
         "category" : "Books"
       }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
+        "productName" : "Chocolate",
+        "price" : 15.0,
         "category" : "Sweets"
       }, {
-        "productName" : "Castle",
-        "price" : 15.0,
+        "productName" : "Headphones",
+        "price" : 100.0,
+        "category" : "Technology"
+      }, {
+        "productName" : "Car",
+        "price" : 20.0,
         "category" : "Toys"
       }, {
-        "productName" : "Dress",
-        "price" : 45.0,
+        "productName" : "Shoes",
+        "price" : 70.0,
         "category" : "Clothes"
       } ]
     }, {
@@ -302,16 +310,12 @@
       "niceScoreHistory" : [ 8.0, 5.0, 0.0 ],
       "assignedBudget" : 129.06590978827862,
       "receivedGifts" : [ {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
-      }, {
-        "productName" : "Castle",
-        "price" : 15.0,
+        "productName" : "Car",
+        "price" : 20.0,
         "category" : "Toys"
       }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
+        "productName" : "Chocolate",
+        "price" : 15.0,
         "category" : "Sweets"
       }, {
         "productName" : "Harry Potter",
@@ -329,16 +333,16 @@
       "niceScoreHistory" : [ 7.0, 2.0 ],
       "assignedBudget" : 276.5698066891685,
       "receivedGifts" : [ {
-        "productName" : "Dress",
-        "price" : 45.0,
+        "productName" : "Handbag",
+        "price" : 200.0,
         "category" : "Clothes"
       }, {
-        "productName" : "Castle",
-        "price" : 15.0,
+        "productName" : "Bike",
+        "price" : 25.0,
         "category" : "Toys"
       }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
+        "productName" : "Bag of Candy",
+        "price" : 20.0,
         "category" : "Sweets"
       } ]
     }, {
@@ -352,16 +356,16 @@
       "niceScoreHistory" : [ 8.0, 9.0 ],
       "assignedBudget" : 280.34366370052163,
       "receivedGifts" : [ {
-        "productName" : "Castle",
-        "price" : 15.0,
+        "productName" : "Bike",
+        "price" : 25.0,
         "category" : "Toys"
       }, {
-        "productName" : "Dress",
-        "price" : 45.0,
+        "productName" : "Handbag",
+        "price" : 200.0,
         "category" : "Clothes"
       }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
+        "productName" : "Bag of Candy",
+        "price" : 20.0,
         "category" : "Sweets"
       } ]
     }, {
@@ -375,12 +379,12 @@
       "niceScoreHistory" : [ 2.0 ],
       "assignedBudget" : 129.3893832463946,
       "receivedGifts" : [ {
-        "productName" : "Castle",
-        "price" : 15.0,
+        "productName" : "Bike",
+        "price" : 25.0,
         "category" : "Toys"
       }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
+        "productName" : "Bag of Candy",
+        "price" : 20.0,
         "category" : "Sweets"
       } ]
     } ]
@@ -396,21 +400,9 @@
       "niceScoreHistory" : [ 7.0, 9.0, 0.0, 8.0 ],
       "assignedBudget" : 122.26304188096988,
       "receivedGifts" : [ {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
-      }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
-      }, {
-        "productName" : "Harry Potter",
-        "price" : 35.0,
-        "category" : "Books"
-      }, {
-        "productName" : "Castle",
-        "price" : 15.0,
-        "category" : "Toys"
+        "productName" : "Headphones",
+        "price" : 100.0,
+        "category" : "Technology"
       } ]
     }, {
       "id" : 1,
@@ -423,17 +415,13 @@
       "niceScoreHistory" : [ 4.0, 6.0, 6.0 ],
       "assignedBudget" : 122.26304188096988,
       "receivedGifts" : [ {
-        "productName" : "Castle",
-        "price" : 15.0,
+        "productName" : "Bike",
+        "price" : 25.0,
         "category" : "Toys"
       }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
+        "productName" : "Milk and Cookies",
+        "price" : 30.0,
         "category" : "Sweets"
-      }, {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
       } ]
     }, {
       "id" : 2,
@@ -450,13 +438,9 @@
         "price" : 35.0,
         "category" : "Books"
       }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
+        "productName" : "Milk and Cookies",
+        "price" : 30.0,
         "category" : "Sweets"
-      }, {
-        "productName" : "Castle",
-        "price" : 15.0,
-        "category" : "Toys"
       } ]
     }, {
       "id" : 3,
@@ -469,13 +453,13 @@
       "niceScoreHistory" : [ 8.0, 5.0, 0.0 ],
       "assignedBudget" : 69.68993387215284,
       "receivedGifts" : [ {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
+        "productName" : "Milk and Cookies",
+        "price" : 30.0,
         "category" : "Sweets"
       }, {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
+        "productName" : "Bike",
+        "price" : 25.0,
+        "category" : "Toys"
       } ]
     }, {
       "id" : 4,
@@ -492,17 +476,9 @@
         "price" : 35.0,
         "category" : "Books"
       }, {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
-      }, {
-        "productName" : "Castle",
-        "price" : 15.0,
+        "productName" : "Bike",
+        "price" : 25.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
       } ]
     }, {
       "id" : 5,
@@ -515,17 +491,9 @@
       "niceScoreHistory" : [ 8.0, 9.0 ],
       "assignedBudget" : 74.17291207445506,
       "receivedGifts" : [ {
-        "productName" : "Castle",
-        "price" : 15.0,
+        "productName" : "Bike",
+        "price" : 25.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
-      }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
       } ]
     }, {
       "id" : 6,
@@ -538,13 +506,9 @@
       "niceScoreHistory" : [ 2.0, 9.0 ],
       "assignedBudget" : 158.94195444526085,
       "receivedGifts" : [ {
-        "productName" : "Castle",
-        "price" : 15.0,
+        "productName" : "Bike",
+        "price" : 25.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
       } ]
     }, {
       "id" : 8,
@@ -556,11 +520,7 @@
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 3.0 ],
       "assignedBudget" : 85.58412931667891,
-      "receivedGifts" : [ {
-        "productName" : "Castle",
-        "price" : 15.0,
-        "category" : "Toys"
-      } ]
+      "receivedGifts" : [ ]
     } ]
   }, {
     "children" : [ {
@@ -574,21 +534,9 @@
       "niceScoreHistory" : [ 7.0, 9.0, 0.0, 8.0, 4.0 ],
       "assignedBudget" : 105.0161729219079,
       "receivedGifts" : [ {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
-      }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
-      }, {
-        "productName" : "Harry Potter",
-        "price" : 35.0,
-        "category" : "Books"
-      }, {
-        "productName" : "Castle",
-        "price" : 15.0,
-        "category" : "Toys"
+        "productName" : "Headphones",
+        "price" : 100.0,
+        "category" : "Technology"
       } ]
     }, {
       "id" : 1,
@@ -605,17 +553,9 @@
         "price" : 35.0,
         "category" : "Books"
       }, {
-        "productName" : "Castle",
-        "price" : 15.0,
-        "category" : "Toys"
-      }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
-      }, {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
+        "productName" : "Headphones",
+        "price" : 100.0,
+        "category" : "Technology"
       } ]
     }, {
       "id" : 2,
@@ -627,19 +567,7 @@
       "averageScore" : 6.2,
       "niceScoreHistory" : [ 4.0, 9.0, 3.0 ],
       "assignedBudget" : 93.01432458797557,
-      "receivedGifts" : [ {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
-      }, {
-        "productName" : "Harry Potter",
-        "price" : 35.0,
-        "category" : "Books"
-      }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
-      } ]
+      "receivedGifts" : [ ]
     }, {
       "id" : 3,
       "lastName" : "Stoica",
@@ -650,15 +578,7 @@
       "averageScore" : 4.9399999999999995,
       "niceScoreHistory" : [ 8.0, 5.0, 0.0, 2.0 ],
       "assignedBudget" : 51.87798942342249,
-      "receivedGifts" : [ {
-        "productName" : "Castle",
-        "price" : 15.0,
-        "category" : "Toys"
-      }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
-      } ]
+      "receivedGifts" : [ ]
     }, {
       "id" : 4,
       "lastName" : "Ionescu",
@@ -669,23 +589,7 @@
       "averageScore" : 7.283333333333333,
       "niceScoreHistory" : [ 7.0, 2.0, 4.0 ],
       "assignedBudget" : 142.04687580222827,
-      "receivedGifts" : [ {
-        "productName" : "Castle",
-        "price" : 15.0,
-        "category" : "Toys"
-      }, {
-        "productName" : "Harry Potter",
-        "price" : 35.0,
-        "category" : "Books"
-      }, {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
-      }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
-      } ]
+      "receivedGifts" : [ ]
     }, {
       "id" : 5,
       "lastName" : "Popescu",
@@ -696,19 +600,7 @@
       "averageScore" : 8.833333333333334,
       "niceScoreHistory" : [ 8.0, 9.0, 9.0 ],
       "assignedBudget" : 172.27653129332035,
-      "receivedGifts" : [ {
-        "productName" : "Castle",
-        "price" : 15.0,
-        "category" : "Toys"
-      }, {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
-      }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
-      } ]
+      "receivedGifts" : [ ]
     }, {
       "id" : 6,
       "lastName" : "Stoica",
@@ -719,15 +611,7 @@
       "averageScore" : 7.666666666666668,
       "niceScoreHistory" : [ 2.0, 9.0, 1.0 ],
       "assignedBudget" : 149.5230271602403,
-      "receivedGifts" : [ {
-        "productName" : "Castle",
-        "price" : 15.0,
-        "category" : "Toys"
-      }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
-      } ]
+      "receivedGifts" : [ ]
     }, {
       "id" : 8,
       "lastName" : "Ionescu",
@@ -738,11 +622,7 @@
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 3.0, 1.0 ],
       "assignedBudget" : 105.0161729219079,
-      "receivedGifts" : [ {
-        "productName" : "Castle",
-        "price" : 15.0,
-        "category" : "Toys"
-      } ]
+      "receivedGifts" : [ ]
     } ]
   } ]
 }

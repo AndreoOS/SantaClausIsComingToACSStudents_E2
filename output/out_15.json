@@ -126,10 +126,6 @@
         "price" : 45.0,
         "category" : "Clothes"
       }, {
-        "productName" : "Chocolate",
-        "price" : 15.0,
-        "category" : "Sweets"
-      }, {
         "productName" : "Castle",
         "price" : 15.0,
         "category" : "Toys"
@@ -158,10 +154,6 @@
         "productName" : "Castle",
         "price" : 15.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Chocolate",
-        "price" : 15.0,
-        "category" : "Sweets"
       } ]
     }, {
       "id" : 1,
@@ -177,10 +169,6 @@
         "productName" : "Dress",
         "price" : 45.0,
         "category" : "Clothes"
-      }, {
-        "productName" : "Chocolate",
-        "price" : 15.0,
-        "category" : "Sweets"
       }, {
         "productName" : "Castle",
         "price" : 15.0,

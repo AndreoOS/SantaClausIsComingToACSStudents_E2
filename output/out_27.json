@@ -157,16 +157,16 @@
       "niceScoreHistory" : [ 4.0 ],
       "assignedBudget" : 66.92602040816327,
       "receivedGifts" : [ {
-        "productName" : "Uno",
-        "price" : 10.0,
+        "productName" : "Monopoly",
+        "price" : 30.0,
         "category" : "Board Games"
       }, {
         "productName" : "Chocolate",
         "price" : 15.0,
         "category" : "Sweets"
       }, {
-        "productName" : "Car",
-        "price" : 20.0,
+        "productName" : "Castle",
+        "price" : 15.0,
         "category" : "Toys"
       } ]
     }, {
@@ -188,8 +188,8 @@
         "price" : 15.0,
         "category" : "Sweets"
       }, {
-        "productName" : "Uno",
-        "price" : 10.0,
+        "productName" : "Monopoly",
+        "price" : 30.0,
         "category" : "Board Games"
       } ]
     }, {
@@ -203,12 +203,12 @@
       "niceScoreHistory" : [ 7.0, 10.0 ],
       "assignedBudget" : 152.1045918367347,
       "receivedGifts" : [ {
-        "productName" : "Uno",
-        "price" : 10.0,
+        "productName" : "Monopoly",
+        "price" : 30.0,
         "category" : "Board Games"
       }, {
-        "productName" : "Car",
-        "price" : 20.0,
+        "productName" : "Castle",
+        "price" : 15.0,
         "category" : "Toys"
       }, {
         "productName" : "Chocolate",
@@ -230,8 +230,8 @@
       "niceScoreHistory" : [ 2.0, 10.0 ],
       "assignedBudget" : 106.47321428571428,
       "receivedGifts" : [ {
-        "productName" : "Uno",
-        "price" : 10.0,
+        "productName" : "Monopoly",
+        "price" : 30.0,
         "category" : "Board Games"
       }, {
         "productName" : "Chocolate",
@@ -253,8 +253,8 @@
       "niceScoreHistory" : [ 7.0, 5.0 ],
       "assignedBudget" : 197.73596938775512,
       "receivedGifts" : [ {
-        "productName" : "Uno",
-        "price" : 10.0,
+        "productName" : "Monopoly",
+        "price" : 30.0,
         "category" : "Board Games"
       }, {
         "productName" : "Chocolate",
@@ -280,17 +280,13 @@
         "price" : 15.0,
         "category" : "Sweets"
       }, {
-        "productName" : "Car",
-        "price" : 20.0,
+        "productName" : "Castle",
+        "price" : 15.0,
         "category" : "Toys"
       }, {
-        "productName" : "Uno",
-        "price" : 10.0,
-        "category" : "Board Games"
-      }, {
-        "productName" : "Twilight",
+        "productName" : "Monopoly",
         "price" : 30.0,
-        "category" : "Books"
+        "category" : "Board Games"
       } ]
     } ]
   }, {

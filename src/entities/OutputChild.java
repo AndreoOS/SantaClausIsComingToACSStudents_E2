@@ -28,7 +28,7 @@ public final class OutputChild {
         averageScore = child.getAverageScore();
         niceScoreHistory = cloneNiceScoreHistory(child.getNiceScoreHistory()); // clone
         assignedBudget = child.getAssignedBudget();
-        receivedGifts = new ArrayList<>();
+        receivedGifts = cloneReceivedGifts(child.getReceivedGifts());
     }
 
     public Integer getId() {
@@ -111,10 +111,10 @@ public final class OutputChild {
         this.receivedGifts = receivedGifts;
     }
 
-    private List<Gift> cloneReceivedGifts(final List<Gift> theReceivedGifts) {
-        List<Gift> clone = new ArrayList<>();
+    private List<OutputGift> cloneReceivedGifts(final List<Gift> theReceivedGifts) {
+        List<OutputGift> clone = new ArrayList<>();
         for (Gift gift : theReceivedGifts) {
-            clone.add(new Gift(gift));
+            clone.add(new OutputGift(gift));
         }
         return clone;
     }

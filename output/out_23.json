@@ -61,8 +61,8 @@
         "price" : 45.0,
         "category" : "Clothes"
       }, {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
+        "productName" : "Harry Potter",
+        "price" : 35.0,
         "category" : "Books"
       } ]
     }, {
@@ -80,8 +80,8 @@
         "price" : 100.0,
         "category" : "Technology"
       }, {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
+        "productName" : "Harry Potter",
+        "price" : 35.0,
         "category" : "Books"
       }, {
         "productName" : "Monopoly",
@@ -137,11 +137,7 @@
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 9.0 ],
       "assignedBudget" : 27.168949771689498,
-      "receivedGifts" : [ {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
-      } ]
+      "receivedGifts" : [ ]
     }, {
       "id" : 4,
       "lastName" : "Mihalache",
@@ -171,10 +167,6 @@
         "productName" : "Doll",
         "price" : 10.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
       } ]
     } ]
   }, {
@@ -197,8 +189,8 @@
         "price" : 45.0,
         "category" : "Clothes"
       }, {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
+        "productName" : "Harry Potter",
+        "price" : 35.0,
         "category" : "Books"
       } ]
     }, {
@@ -212,16 +204,16 @@
       "niceScoreHistory" : [ 6.0, 5.0, 6.0 ],
       "assignedBudget" : 492.7993055555555,
       "receivedGifts" : [ {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
+        "productName" : "Harry Potter",
+        "price" : 35.0,
         "category" : "Books"
       }, {
         "productName" : "Headphones",
         "price" : 100.0,
         "category" : "Technology"
       }, {
-        "productName" : "Doll",
-        "price" : 10.0,
+        "productName" : "Bike",
+        "price" : 25.0,
         "category" : "Toys"
       }, {
         "productName" : "Monopoly",
@@ -250,10 +242,6 @@
         "productName" : "Monopoly",
         "price" : 30.0,
         "category" : "Board Games"
-      }, {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
       } ]
     }, {
       "id" : 3,
@@ -266,16 +254,12 @@
       "niceScoreHistory" : [ 9.0, 5.0 ],
       "assignedBudget" : 456.26388888888886,
       "receivedGifts" : [ {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
-      }, {
         "productName" : "Headphones",
         "price" : 100.0,
         "category" : "Technology"
       }, {
-        "productName" : "Monopoly",
-        "price" : 30.0,
+        "productName" : "Puzzle",
+        "price" : 50.0,
         "category" : "Board Games"
       } ]
     }, {
@@ -293,12 +277,8 @@
         "price" : 100.0,
         "category" : "Technology"
       }, {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
-      }, {
-        "productName" : "Monopoly",
-        "price" : 30.0,
+        "productName" : "Puzzle",
+        "price" : 50.0,
         "category" : "Board Games"
       } ]
     } ]

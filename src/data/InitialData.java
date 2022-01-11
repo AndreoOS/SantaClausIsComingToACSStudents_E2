@@ -65,20 +65,18 @@ public final class InitialData {
         return null;
     }
 
-    public List<Child> sortChildrenByNiceScore() {
-        return children.stream().sorted(((o1, o2) -> {
-            if (o1.getNiceScore().compareTo(o2.getNiceScore()) > 0) {
-                return o1.getNiceScore().compareTo(o2.getNiceScore());
-            } else if (o1.getNiceScore().compareTo(o2.getNiceScore()) < 0) {
-                return o2.getNiceScore().compareTo(o1.getNiceScore());
+    public List<Child> sortChildrenByNiceScoreAverage() {
+        List<Child> sortedList = children.stream().sorted(((o1, o2) -> {
+            if (o1.getAverageScore().compareTo(o2.getAverageScore()) == 0) {
+                return o1.getId().compareTo(o2.getId());
             } else {
-                if (o1.getId().compareTo(o2.getId()) > 0) {
-                    return o1.getId().compareTo(o2.getId());
-                } else {
-                    return o2.getId().compareTo(o1.getId());
-                }
+                return o2.getAverageScore().compareTo(o1.getAverageScore());
             }
-
         })).toList();
+        return sortedList;
+    }
+
+    public void removeNoQuantity() {
+        santaGiftsList.removeIf(gift -> gift.getQuantity() == 0);
     }
 }
