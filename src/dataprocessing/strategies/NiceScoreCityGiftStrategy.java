@@ -35,11 +35,11 @@ public class NiceScoreCityGiftStrategy implements GiftGivingStrategy {
                                         .compareTo(foundGift.getPrice()) > 0) {
                                     assignedGift = foundGift;
                                 }
-                                } else {
-                                    assignedGift = foundGift;
-                                }
+                            } else {
+                                assignedGift = foundGift;
                             }
                         }
+                    }
                     if (assignedGift != null) {
                         if (Double.compare(budget, assignedGift.getPrice()) > 0
                                 && !child.getReceivedGifts().contains(assignedGift)

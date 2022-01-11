@@ -604,7 +604,11 @@
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 9.0 ],
       "assignedBudget" : 139.65455427378367,
-      "receivedGifts" : [ ]
+      "receivedGifts" : [ {
+        "productName" : "Handbag",
+        "price" : 200.0,
+        "category" : "Clothes"
+      } ]
     }, {
       "id" : 8,
       "lastName" : "Stoica",

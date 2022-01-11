@@ -54,6 +54,7 @@ public final class Simulation {
         ElfModifier modifier = new ElfModifier(database, giftList);
         modifier.applyBlackPinkElfModifier();
         giveGifts("id");
+        modifier.applyYellowElfModifier();
         Children giftedChildren = new Children();
         for (Child child : database.getInitialData().getChildren()) {
             OutputChild outputChild = new OutputChild(child);
@@ -87,6 +88,7 @@ public final class Simulation {
             ElfModifier modifier = new ElfModifier(database, giftList);
             modifier.applyBlackPinkElfModifier();
             giveGifts(annualChange.getStrategy());
+            modifier.applyYellowElfModifier();
             Children giftedChildren = new Children();
             for (Child child : database.getInitialData().getChildren()) {
                 OutputChild outputChild = new OutputChild(child);

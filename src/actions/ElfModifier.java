@@ -32,13 +32,30 @@ public class ElfModifier {
 
     public void applyYellowElfModifier() {
         for (Child child :database.getInitialData().getChildren()) {
-            if (child.getReceivedGifts().isEmpty()) {
-                Category favoriteCateg = child.getGiftsPreferences().get(0);
-                Gift assignedGift = null;
-
+            if (child.getElf().equals(ElvesType.YELLOW)) {
+                if (child.getReceivedGifts().isEmpty()) {
+                    Category favoriteCateg = child.getGiftsPreferences().get(0);
+                    Gift assignedGift = null;
+                    if (giftList.getSpecifiedList(favoriteCateg) != null) {
+                        for (Gift foundGift : giftList.getSpecifiedList(favoriteCateg)) {
+                            if (assignedGift != null) {
+                                if (assignedGift.getPrice()
+                                        .compareTo(foundGift.getPrice()) > 0) {
+                                    assignedGift = foundGift;
+                                }
+                            } else {
+                                assignedGift = foundGift;
+                            }
+                        }
+                    }
+                    if (assignedGift != null) {
+                        if (assignedGift.getQuantity() > 0) {
+                            assignedGift.setQuantity(assignedGift.getQuantity() - 1);
+                            child.getReceivedGifts().add(assignedGift);
+                        }
+                    }
+                }
             }
         }
-
-
     }
 }
