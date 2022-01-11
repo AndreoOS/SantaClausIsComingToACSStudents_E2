@@ -2,8 +2,10 @@ package data;
 
 import entities.Child;
 import entities.Gift;
+import enums.Cities;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public final class InitialData {
@@ -42,13 +44,7 @@ public final class InitialData {
      * @return sorted list
      */
     public List<Child> sortChildrenById() {
-        return children.stream().sorted((o1, o2) -> {
-            if (o1.getId().compareTo(o2.getId()) > 0) {
-                return o1.getId().compareTo(o2.getId());
-            } else {
-                return o2.getId().compareTo(o1.getId());
-            }
-        }).toList();
+        return children.stream().sorted(Comparator.comparing(Child::getId)).toList();
     }
 
     /**
@@ -66,14 +62,25 @@ public final class InitialData {
     }
 
     public List<Child> sortChildrenByNiceScoreAverage() {
-        List<Child> sortedList = children.stream().sorted(((o1, o2) -> {
+        return children.stream().sorted(((o1, o2) -> {
             if (o1.getAverageScore().compareTo(o2.getAverageScore()) == 0) {
                 return o1.getId().compareTo(o2.getId());
             } else {
                 return o2.getAverageScore().compareTo(o1.getAverageScore());
             }
         })).toList();
-        return sortedList;
+    }
+
+    public List<Child> getChildrenInCity(Cities city) {
+        List<Child> result = new ArrayList<>();
+        for (Child child : children) {
+            if (child.getCity().equals(city)) {
+                result.add(child);
+            }
+        }
+        result.stream().sorted(Comparator.comparing(Child::getId)).toList();
+
+        return result;
     }
 
     public void removeNoQuantity() {

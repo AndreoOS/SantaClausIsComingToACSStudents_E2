@@ -35,34 +35,34 @@ public final class DataManagement {
      * Finally, the output database is nullified, so as the results don't concatenate together
      */
     public void readAllDataAndSimulate() {
-//        for (int i = 1; i <= Constants.TESTS_NUMBER; i++) {
-//            Database db = Database.getInstance();
-//            try {
-//                db = new ObjectMapper().readerFor(Database.class).readValue(
-//                        new File("tests/test" + i + Constants.FILE_EXTENSION));
-//                OutputDatabase odb = OutputDatabase.getInstance();
-//                GiftList giftList = new GiftList();
-//                giftList.populateGiftList(db.getInitialData().getSantaGiftsList());
-//                simulateData(db, odb, giftList);
-//                writeAllData(odb, i);
-//                OutputDatabase.setOutputDatabase(null);
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//        }
-        Database db = Database.getInstance();
+        for (int i = 1; i <= Constants.TESTS_NUMBER; i++) {
+            Database db = Database.getInstance();
             try {
                 db = new ObjectMapper().readerFor(Database.class).readValue(
-                        new File("tests/test" + 13 + Constants.FILE_EXTENSION));
+                        new File("tests/test" + i + Constants.FILE_EXTENSION));
                 OutputDatabase odb = OutputDatabase.getInstance();
                 GiftList giftList = new GiftList();
                 giftList.populateGiftList(db.getInitialData().getSantaGiftsList());
                 simulateData(db, odb, giftList);
-                writeAllData(odb, 13);
+                writeAllData(odb, i);
                 OutputDatabase.setOutputDatabase(null);
             } catch (IOException e) {
                 e.printStackTrace();
             }
+        }
+//        Database db = Database.getInstance();
+//            try {
+//                db = new ObjectMapper().readerFor(Database.class).readValue(
+//                        new File("tests/test" + 14 + Constants.FILE_EXTENSION));
+//                OutputDatabase odb = OutputDatabase.getInstance();
+//                GiftList giftList = new GiftList();
+//                giftList.populateGiftList(db.getInitialData().getSantaGiftsList());
+//                simulateData(db, odb, giftList);
+//                writeAllData(odb, 14);
+//                OutputDatabase.setOutputDatabase(null);
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
     }
 
     /**

@@ -8,6 +8,7 @@ import enums.ElvesType;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public final class Child {
     private Integer id;
@@ -61,6 +62,11 @@ public final class Child {
         } else {
             this.ageCategory = AgeCategory.YOUNG_ADULT;
         }
+    }
+
+    public void eraseDuplicates() {
+        giftsPreferences = giftsPreferences.stream().distinct()
+                .collect(Collectors.toList());
     }
 
     public Integer getId() {

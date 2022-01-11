@@ -44,11 +44,14 @@ public final class Simulation {
      * @param odb Database that stores the results
      */
     private void initialRound(final OutputDatabase odb) {
+        for(Child child : database.getInitialData().getChildren()) {
+            child.eraseDuplicates();
+        }
         setNiceScoreHistory();
         setAgeCategoriesAndCalculateAverage();
         database.removeYoungAdults();
         setAssignedBudgets();
-        ElfModifier modifier = new ElfModifier(database);
+        ElfModifier modifier = new ElfModifier(database, giftList);
         modifier.applyBlackPinkElfModifier();
         giveGifts("id");
         Children giftedChildren = new Children();
@@ -81,7 +84,7 @@ public final class Simulation {
             setAgeCategoriesAndCalculateAverage();
             database.removeYoungAdults();
             setAssignedBudgets();
-            ElfModifier modifier = new ElfModifier(database);
+            ElfModifier modifier = new ElfModifier(database, giftList);
             modifier.applyBlackPinkElfModifier();
             giveGifts(annualChange.getStrategy());
             Children giftedChildren = new Children();

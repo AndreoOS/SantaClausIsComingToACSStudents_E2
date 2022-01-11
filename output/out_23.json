@@ -293,7 +293,11 @@
       "averageScore" : 2.933333333333333,
       "niceScoreHistory" : [ 5.0, 4.0, 1.0 ],
       "assignedBudget" : 32.66538777747327,
-      "receivedGifts" : [ ]
+      "receivedGifts" : [ {
+        "productName" : "Bike",
+        "price" : 25.0,
+        "category" : "Toys"
+      } ]
     }, {
       "id" : 1,
       "lastName" : "Ionescu",
@@ -304,7 +308,15 @@
       "averageScore" : 8.58,
       "niceScoreHistory" : [ 6.0, 5.0, 6.0, 8.0 ],
       "assignedBudget" : 136.4946560701562,
-      "receivedGifts" : [ ]
+      "receivedGifts" : [ {
+        "productName" : "Bike",
+        "price" : 25.0,
+        "category" : "Toys"
+      }, {
+        "productName" : "Puzzle",
+        "price" : 50.0,
+        "category" : "Board Games"
+      } ]
     }, {
       "id" : 2,
       "lastName" : "Popescu",
@@ -315,7 +327,15 @@
       "averageScore" : 7.14,
       "niceScoreHistory" : [ 2.0, 1.0, 5.0, 8.0 ],
       "assignedBudget" : 113.58646204439572,
-      "receivedGifts" : [ ]
+      "receivedGifts" : [ {
+        "productName" : "Bike",
+        "price" : 25.0,
+        "category" : "Toys"
+      }, {
+        "productName" : "Puzzle",
+        "price" : 50.0,
+        "category" : "Board Games"
+      } ]
     }, {
       "id" : 3,
       "lastName" : "Popescu",
@@ -326,7 +346,11 @@
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 9.0, 5.0, 9.0 ],
       "assignedBudget" : 111.35927651411345,
-      "receivedGifts" : [ ]
+      "receivedGifts" : [ {
+        "productName" : "Puzzle",
+        "price" : 50.0,
+        "category" : "Board Games"
+      } ]
     }, {
       "id" : 4,
       "lastName" : "Mihalache",
@@ -337,7 +361,11 @@
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 9.0, 3.0 ],
       "assignedBudget" : 159.08468073444777,
-      "receivedGifts" : [ ]
+      "receivedGifts" : [ {
+        "productName" : "Puzzle",
+        "price" : 50.0,
+        "category" : "Board Games"
+      } ]
     }, {
       "id" : 6,
       "lastName" : "Pop",
@@ -348,7 +376,15 @@
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 7.0 ],
       "assignedBudget" : 206.8100849547821,
-      "receivedGifts" : [ ]
+      "receivedGifts" : [ {
+        "productName" : "Dress",
+        "price" : 45.0,
+        "category" : "Clothes"
+      }, {
+        "productName" : "Puzzle",
+        "price" : 50.0,
+        "category" : "Board Games"
+      } ]
     } ]
   } ]
 }
