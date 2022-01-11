@@ -113,15 +113,6 @@ public final class GiftList {
         }
     }
 
-    public void removeNoQuantity() {
-        boardGames.removeIf(gift -> gift.getQuantity() == 0);
-        tech.removeIf(gift -> gift.getQuantity() == 0);
-        clothes.removeIf(gift -> gift.getQuantity() == 0);
-        toys.removeIf(gift -> gift.getQuantity() == 0);
-        books.removeIf(gift -> gift.getQuantity() == 0);
-        sweets.removeIf(gift -> gift.getQuantity() == 0);
-    }
-
     public List<Gift> getBoardGames() {
         return boardGames;
     }

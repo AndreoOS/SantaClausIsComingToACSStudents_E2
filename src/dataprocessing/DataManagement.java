@@ -53,12 +53,12 @@ public final class DataManagement {
         Database db = Database.getInstance();
             try {
                 db = new ObjectMapper().readerFor(Database.class).readValue(
-                        new File("tests/test" + 23 + Constants.FILE_EXTENSION));
+                        new File("tests/test" + 28 + Constants.FILE_EXTENSION));
                 OutputDatabase odb = OutputDatabase.getInstance();
                 GiftList giftList = new GiftList();
                 giftList.populateGiftList(db.getInitialData().getSantaGiftsList());
                 simulateData(db, odb, giftList);
-                writeAllData(odb, 23);
+                writeAllData(odb, 28);
                 OutputDatabase.setOutputDatabase(null);
             } catch (IOException e) {
                 e.printStackTrace();
