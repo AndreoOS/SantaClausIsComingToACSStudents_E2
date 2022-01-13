@@ -1,4 +1,4 @@
-package dataprocessing.strategies;
+package dataprocessing.scorestrategy;
 
 import entities.Child;
 

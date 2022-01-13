@@ -4,7 +4,11 @@ import entities.Child;
 import enums.AgeCategory;
 import enums.Cities;
 
-import java.util.*;
+import java.util.List;
+import java.util.LinkedHashMap;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public final class Database {
     private static Database database = null;
@@ -101,6 +105,13 @@ public final class Database {
         return averageCityScores;
     }
 
+    /**
+     * This method populates the hashmap field in Database, with all the cities the children are
+     * from and their corresponding average scores
+     * First, the method uses an auxiliary map for storing the city and all of its scores. Using
+     * this auxiliary map it calculates the average and populates the database map, then sorts it
+     * by average.
+     */
     public void setAverageCityScores() {
         HashMap<Cities, ArrayList<Double>> allCityScores = new HashMap<>();
         for (Child child : this.getInitialData().getChildren()) {

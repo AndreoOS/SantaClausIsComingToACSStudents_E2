@@ -2,7 +2,7 @@ package entities;
 
 import enums.Category;
 
-public class OutputGift {
+public final class OutputGift {
     private String productName;
     private Double price;
     private Category category;
@@ -10,7 +10,7 @@ public class OutputGift {
     public OutputGift() {
     }
 
-    public OutputGift(Gift gift) {
+    public OutputGift(final Gift gift) {
         productName = gift.getProductName();
         price = gift.getPrice();
         category = gift.getCategory();
@@ -20,7 +20,7 @@ public class OutputGift {
         return productName;
     }
 
-    public void setProductName(String productName) {
+    public void setProductName(final String productName) {
         this.productName = productName;
     }
 
@@ -28,7 +28,7 @@ public class OutputGift {
         return price;
     }
 
-    public void setPrice(Double price) {
+    public void setPrice(final Double price) {
         this.price = price;
     }
 
@@ -36,7 +36,7 @@ public class OutputGift {
         return category;
     }
 
-    public void setCategory(Category category) {
+    public void setCategory(final Category category) {
         this.category = category;
     }
 }

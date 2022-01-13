@@ -1,4 +1,4 @@
-package dataprocessing.strategies;
+package dataprocessing.giftstrategy;
 
 import data.Database;
 import data.GiftList;
@@ -6,12 +6,12 @@ import entities.Child;
 import entities.Gift;
 import enums.Category;
 
-public class IdGiftStrategy implements GiftGivingStrategy{
+public final class IdGiftStrategy implements GiftGivingStrategy {
     private Database database;
     private GiftList giftList;
 
 
-    public IdGiftStrategy(Database database, final GiftList giftList) {
+    public IdGiftStrategy(final Database database, final GiftList giftList) {
         this.database = database;
         this.giftList = giftList;
     }

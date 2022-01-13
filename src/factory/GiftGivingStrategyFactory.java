@@ -2,18 +2,25 @@ package factory;
 
 import data.Database;
 import data.GiftList;
-import dataprocessing.strategies.GiftGivingStrategy;
-import dataprocessing.strategies.IdGiftStrategy;
-import dataprocessing.strategies.NiceScoreCityGiftStrategy;
-import dataprocessing.strategies.NiceScoreGiftStrategy;
+import dataprocessing.giftstrategy.GiftGivingStrategy;
+import dataprocessing.giftstrategy.IdGiftStrategy;
+import dataprocessing.giftstrategy.NiceScoreCityGiftStrategy;
+import dataprocessing.giftstrategy.NiceScoreGiftStrategy;
 
-public class GiftGivingStrategyFactory {
-    public GiftGivingStrategyFactory() {
+public final class GiftGivingStrategyFactory {
+    private GiftGivingStrategyFactory() {
     }
 
+    /**
+     * Method creates a strategy based on the strategy string.
+     * @param strategy type of strategy to be created
+     * @param database database
+     * @param giftList list of gifts
+     * @return a strategy that distributes gifts
+     */
     public static GiftGivingStrategy createStrategy(final String strategy, final Database database,
                                                     final GiftList giftList) {
-        switch(strategy) {
+        switch (strategy) {
             case ("id") -> {
                 return new IdGiftStrategy(database, giftList);
             }

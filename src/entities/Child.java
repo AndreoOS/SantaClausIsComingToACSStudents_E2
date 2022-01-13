@@ -64,6 +64,9 @@ public final class Child {
         }
     }
 
+    /**
+     * Method deletes the preferences that appear multiple times in the list
+     */
     public void eraseDuplicates() {
         giftsPreferences = giftsPreferences.stream().distinct()
                 .collect(Collectors.toList());
@@ -161,7 +164,7 @@ public final class Child {
         return niceScoreBonus;
     }
 
-    public void setNiceScoreBonus(Integer niceScoreBonus) {
+    public void setNiceScoreBonus(final Integer niceScoreBonus) {
         this.niceScoreBonus = niceScoreBonus;
     }
 
@@ -169,7 +172,7 @@ public final class Child {
         return elf;
     }
 
-    public void setElf(ElvesType elf) {
+    public void setElf(final ElvesType elf) {
         this.elf = elf;
     }
 }

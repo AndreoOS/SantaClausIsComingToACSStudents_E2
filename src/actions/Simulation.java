@@ -1,23 +1,25 @@
 package actions;
 
+import elfmodifiers.BlackElf;
+import elfmodifiers.ModifierVisitor;
+import elfmodifiers.PinkElf;
+import elfmodifiers.YellowElf;
+import common.Constants;
 import data.AnnualChanges;
 import data.Database;
 import data.GiftList;
 import data.OutputDatabase;
-import dataprocessing.strategies.CalculateScoreStrategy;
-import dataprocessing.strategies.GiftGivingStrategy;
-import entities.*;
-import enums.Category;
-import enums.ElvesType;
+import dataprocessing.scorestrategy.CalculateScoreStrategy;
+import dataprocessing.giftstrategy.GiftGivingStrategy;
+import entities.Child;
+import entities.Children;
+import entities.OutputChild;
 import factory.CalculateScoreStrategyFactory;
 import factory.GiftGivingStrategyFactory;
 
-import java.util.Map;
-
 public final class Simulation {
-    private Database database;
-    private Double budgetUnit;
-    private GiftList giftList;
+    private final Database database;
+    private final GiftList giftList;
 
     public Simulation(final Database database, final GiftList giftList) {
         this.database = database;
@@ -44,17 +46,21 @@ public final class Simulation {
      * @param odb Database that stores the results
      */
     private void initialRound(final OutputDatabase odb) {
-        for(Child child : database.getInitialData().getChildren()) {
+        for (Child child : database.getInitialData().getChildren()) {
             child.eraseDuplicates();
         }
         setNiceScoreHistory();
         setAgeCategoriesAndCalculateAverage();
         database.removeYoungAdults();
         setAssignedBudgets();
-        ElfModifier modifier = new ElfModifier(database, giftList);
-        modifier.applyBlackPinkElfModifier();
+        BlackElf blackElf = new BlackElf(database);
+        PinkElf pinkElf = new PinkElf(database);
+        ModifierVisitor modifierVisitor = new ModifierVisitor();
+        blackElf.accept(modifierVisitor);
+        pinkElf.accept(modifierVisitor);
         giveGifts("id");
-        modifier.applyYellowElfModifier();
+        YellowElf yellowElf = new YellowElf(database, giftList);
+        yellowElf.accept(modifierVisitor);
         Children giftedChildren = new Children();
         for (Child child : database.getInitialData().getChildren()) {
             OutputChild outputChild = new OutputChild(child);
@@ -85,10 +91,14 @@ public final class Simulation {
             setAgeCategoriesAndCalculateAverage();
             database.removeYoungAdults();
             setAssignedBudgets();
-            ElfModifier modifier = new ElfModifier(database, giftList);
-            modifier.applyBlackPinkElfModifier();
+            BlackElf blackElf = new BlackElf(database);
+            PinkElf pinkElf = new PinkElf(database);
+            ModifierVisitor modifierVisitor = new ModifierVisitor();
+            blackElf.accept(modifierVisitor);
+            pinkElf.accept(modifierVisitor);
             giveGifts(annualChange.getStrategy());
-            modifier.applyYellowElfModifier();
+            YellowElf yellowElf = new YellowElf(database, giftList);
+            yellowElf.accept(modifierVisitor);
             Children giftedChildren = new Children();
             for (Child child : database.getInitialData().getChildren()) {
                 OutputChild outputChild = new OutputChild(child);
@@ -104,8 +114,9 @@ public final class Simulation {
      * child. As long as the budget permits it, the cheapest gift from Santa's stash is
      * distributed to the child.
      */
-    private void giveGifts(String strat) {
-        GiftGivingStrategy giftStrategy = GiftGivingStrategyFactory.createStrategy(strat, database, giftList);
+    private void giveGifts(final String strategy) {
+        GiftGivingStrategy giftStrategy = GiftGivingStrategyFactory
+                .createStrategy(strategy, database, giftList);
         if (giftStrategy != null) {
             giftStrategy.distributeGifts();
         }
@@ -133,9 +144,10 @@ public final class Simulation {
                 child.setAverageScore(strategy.getScore());
             }
             Double newAverage = child.getAverageScore();
-            newAverage = newAverage + (newAverage * child.getNiceScoreBonus())/100;
-            if (newAverage > 10.0) {
-                child.setAverageScore(10.0);
+            newAverage = newAverage
+                    + (newAverage * child.getNiceScoreBonus()) / Constants.MAX_PERCENT;
+            if (newAverage > Constants.MAX_NICE_SCORE) {
+                child.setAverageScore(Constants.MAX_NICE_SCORE);
              } else {
                 child.setAverageScore(newAverage);
             }
@@ -148,7 +160,7 @@ public final class Simulation {
      * every child in the database
      */
     private void setAssignedBudgets() {
-        budgetUnit = database.getSantaBudget() / database.getSumOfAverage();
+        Double budgetUnit = database.getSantaBudget() / database.getSumOfAverage();
         for (Child child : database.getInitialData().getChildren()) {
             child.setAssignedBudget(budgetUnit * child.getAverageScore());
         }

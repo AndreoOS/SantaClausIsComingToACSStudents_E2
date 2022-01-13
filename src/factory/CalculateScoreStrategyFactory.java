@@ -1,6 +1,10 @@
 package factory;
 
-import dataprocessing.strategies.*;
+import dataprocessing.scorestrategy.BabyScoreStrategy;
+import dataprocessing.scorestrategy.TeenScoreStrategy;
+import dataprocessing.scorestrategy.KidScoreStrategy;
+import dataprocessing.scorestrategy.YoungAdultScoreStrategy;
+import dataprocessing.scorestrategy.CalculateScoreStrategy;
 import entities.Child;
 import enums.AgeCategory;
 

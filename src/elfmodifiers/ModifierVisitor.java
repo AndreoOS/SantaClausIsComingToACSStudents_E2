@@ -1,43 +1,60 @@
-package actions;
+package elfmodifiers;
 
-import data.Database;
-import data.GiftList;
+import common.Constants;
 import entities.Child;
 import entities.Gift;
 import enums.Category;
 import enums.ElvesType;
 
-public class ElfModifier {
-    Database database;
-    GiftList giftList;
+public final class ModifierVisitor implements Visitor {
 
-    public ElfModifier(Database database, GiftList giftList) {
-        this.database = database;
-        this.giftList = giftList;
-    }
-
-    public void applyBlackPinkElfModifier() {
-        for (Child child : database.getInitialData().getChildren()) {
+    /**
+     * Method implements behaviour if BlackElf is visited
+     * BlackElf cuts the budget by 30%
+     * @param elf elf to be visited
+     */
+    @Override
+    public void visit(final BlackElf elf) {
+        for (Child child : elf.getDatabase().getInitialData().getChildren()) {
             if (child.getElf().equals(ElvesType.BLACK)) {
                 Double newBudget = child.getAssignedBudget();
-                newBudget -= ((newBudget * 30) / 100);
-                child.setAssignedBudget(newBudget);
-            } else if (child.getElf().equals(ElvesType.PINK)) {
-                Double newBudget = child.getAssignedBudget();
-                newBudget += ((newBudget * 30) / 100);
+                newBudget -= ((newBudget * Constants.PERCENTAGE) / Constants.MAX_PERCENT);
                 child.setAssignedBudget(newBudget);
             }
         }
     }
 
-    public void applyYellowElfModifier() {
-        for (Child child :database.getInitialData().getChildren()) {
+    /**
+     * Method implements behaviour if PinkElf is visited
+     * PinkElf raises the budget by 30%
+     * @param elf elf to be visited
+     */
+    @Override
+    public void visit(final PinkElf elf) {
+        for (Child child : elf.getDatabase().getInitialData().getChildren()) {
+            if (child.getElf().equals(ElvesType.PINK)) {
+                Double newBudget = child.getAssignedBudget();
+                newBudget += ((newBudget * Constants.PERCENTAGE) / Constants.MAX_PERCENT);
+                child.setAssignedBudget(newBudget);
+            }
+        }
+
+    }
+
+    /**
+     * Method implements behaviour if YellowElf is visited
+     * YellowElf gives a gift to a giftless child
+     * @param elf elf to be visited
+     */
+    @Override
+    public void visit(final YellowElf elf) {
+        for (Child child : elf.getDatabase().getInitialData().getChildren()) {
             if (child.getElf().equals(ElvesType.YELLOW)) {
                 if (child.getReceivedGifts().isEmpty()) {
                     Category favoriteCateg = child.getGiftsPreferences().get(0);
                     Gift assignedGift = null;
-                    if (giftList.getSpecifiedList(favoriteCateg) != null) {
-                        for (Gift foundGift : giftList.getSpecifiedList(favoriteCateg)) {
+                    if (elf.getGiftList().getSpecifiedList(favoriteCateg) != null) {
+                        for (Gift foundGift : elf.getGiftList().getSpecifiedList(favoriteCateg)) {
                             if (assignedGift != null) {
                                 if (assignedGift.getPrice()
                                         .compareTo(foundGift.getPrice()) > 0) {
