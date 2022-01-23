@@ -23,6 +23,10 @@ public final class GiftList {
         toys = new ArrayList<>();
     }
 
+    /**
+     * Adds the gift given as a parameter to the corresponding list
+     * @param gift gift to be added to the lists
+     */
     public void addToGiftList(final Gift gift) {
         switch (gift.getCategory()) {
             case SWEETS -> {
@@ -42,6 +46,8 @@ public final class GiftList {
             }
             case BOOKS -> {
                 books.add(gift);
+            }
+            default -> {
             }
         }
     }

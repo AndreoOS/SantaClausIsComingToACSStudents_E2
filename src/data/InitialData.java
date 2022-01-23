@@ -61,6 +61,11 @@ public final class InitialData {
         return null;
     }
 
+    /**
+     * Method takes the all the children and sorts them based on their average score (if the
+     * average scores are equal, they are sorted by the id)
+     * @return a sorted list of children
+     */
     public List<Child> sortChildrenByNiceScoreAverage() {
         return children.stream().sorted(((o1, o2) -> {
             if (o1.getAverageScore().compareTo(o2.getAverageScore()) == 0) {
@@ -71,7 +76,12 @@ public final class InitialData {
         })).toList();
     }
 
-    public List<Child> getChildrenInCity(Cities city) {
+    /**
+     * Method returns a list of all the children from a city, sorted by their id
+     * @param city the city that the children live in
+     * @return sorted children list
+     */
+    public List<Child> getChildrenInCity(final Cities city) {
         List<Child> result = new ArrayList<>();
         for (Child child : children) {
             if (child.getCity().equals(city)) {
@@ -83,7 +93,4 @@ public final class InitialData {
         return result;
     }
 
-    public void removeNoQuantity() {
-        santaGiftsList.removeIf(gift -> gift.getQuantity() == 0);
-    }
 }

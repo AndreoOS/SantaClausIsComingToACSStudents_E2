@@ -28,7 +28,7 @@ public final class OutputChild {
         averageScore = child.getAverageScore();
         niceScoreHistory = cloneNiceScoreHistory(child.getNiceScoreHistory()); // clone
         assignedBudget = child.getAssignedBudget();
-        receivedGifts = cloneReceivedGifts(child.getReceivedGifts());
+        receivedGifts = cloneReceivedGifts(child.getReceivedGifts()); // clone
     }
 
     public Integer getId() {
@@ -111,6 +111,12 @@ public final class OutputChild {
         this.receivedGifts = receivedGifts;
     }
 
+    /**
+     * Method clones the list given as parameter, so the list doesn't change after simulating
+     * years
+     * @param theReceivedGifts list of gifts received that year
+     * @return a list of output gifts
+     */
     private List<OutputGift> cloneReceivedGifts(final List<Gift> theReceivedGifts) {
         List<OutputGift> clone = new ArrayList<>();
         for (Gift gift : theReceivedGifts) {
@@ -119,10 +125,20 @@ public final class OutputChild {
         return clone;
     }
 
+    /**
+     * Method clones the gift preferences so that they cannot be changed externally
+     * @param giftPreferences preferences to be cloned
+     * @return cloned list
+     */
     private List<Category> cloneGiftPreferences(final List<Category> giftPreferences) {
         return new ArrayList<>(giftPreferences);
     }
 
+    /**
+     * Method clones the nice score history list so that they cannot be changed externally
+     * @param theNiceScoreHistory scores to be cloned
+     * @return cloned list
+     */
     private List<Double> cloneNiceScoreHistory(final List<Double> theNiceScoreHistory) {
         return new ArrayList<>(theNiceScoreHistory);
     }

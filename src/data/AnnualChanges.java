@@ -5,7 +5,6 @@ import entities.ChildUpdate;
 import entities.Gift;
 import enums.Category;
 
-import javax.xml.crypto.Data;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -114,6 +113,11 @@ public final class AnnualChanges {
         database.setSantaBudget(newSantaBudget);
     }
 
+    /**
+     * Method adds the new gifts from every year to Santa's list and to the gift list
+     * @param database database to add the gifts into
+     * @param giftList gift list to add the new gifts into
+     */
     public void addNewGifts(final Database database, final GiftList giftList) {
         for (Gift gift : newGifts) {
             database.getInitialData().getSantaGiftsList().add(gift);
@@ -125,7 +129,7 @@ public final class AnnualChanges {
         return strategy;
     }
 
-    public void setStrategy(String strategy) {
+    public void setStrategy(final String strategy) {
         this.strategy = strategy;
     }
 

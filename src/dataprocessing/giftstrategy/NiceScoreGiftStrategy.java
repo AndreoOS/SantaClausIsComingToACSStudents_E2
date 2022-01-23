@@ -1,4 +1,4 @@
-package dataprocessing.strategies;
+package dataprocessing.giftstrategy;
 
 import data.Database;
 import data.GiftList;
@@ -6,12 +6,12 @@ import entities.Child;
 import entities.Gift;
 import enums.Category;
 
-public class NiceScoreGiftStrategy implements GiftGivingStrategy {
-    private final Database database;
-    private final GiftList giftList;
+public final class NiceScoreGiftStrategy implements GiftGivingStrategy {
+    private Database database;
+    private GiftList giftList;
 
 
-    public NiceScoreGiftStrategy(Database database, final GiftList giftList) {
+    public NiceScoreGiftStrategy(final Database database, final GiftList giftList) {
         this.database = database;
         this.giftList = giftList;
     }
